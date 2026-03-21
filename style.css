@@ -7,6 +7,7 @@
   list-style: none;
   text-decoration: none;
 }
+/* Variavéis cores e fontes*/
 :root {
   /* BASE */
   --color-bg: #f8f5f5;
@@ -18,6 +19,7 @@
   --color-text-muted: #5b646b;
 
   /* BRAND (confiança) */
+
   --color-primary: #1c2b36;
   /* ACOLHIMENTO (rosé) */
   --color-accent: #d9a5a5;
@@ -29,10 +31,49 @@
   /* DETALHES */
   --color-border: #e6dede;
 
+  /* FONTES */
   --font-heading: "Lora", serif;
   --font-base: "Nunito", sans-serif;
 
+  /* ESPAÇAMENTOS */
   --border-radius-sm: 6px;
   --border-radius-xl: 32px;
   --width-container: 1440px;
+}
+html {
+  scroll-behavior: smooth; /*movimento suave*/
+  scroll-padding-top: 5rem; /*evita que conteudo grude no topo*/
+}
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  overflow-x: hidden;
+
+  -webkit-text-size-adjust: 100%; /*evita que o navegador aumente o tamanho do texto sozinho*/
+  -moz-osx-font-smoothing: grayscale; /*deixa o texto mais leve visualmente*/
+  -webkit-font-smoothing: antialiased; /*texto mais fino e menos serrilhado*/
+  text-rendering: optimizeLegibility; /*melhora a legibilidade do texto. */
+}
+section {
+  padding: 5rem 2rem;
+}
+/* Acessibilidade -tab- a borda só aparece quando o usuário navega usando o teclado */
+a:focus-visible {
+  outline: 3px solid var(--color-cta);
+  outline-offset: 2px;
+}
+.skip-link {
+  display: block;
+  position: fixed;
+  top: -50px;
+  left: 40%;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  padding: 4px 16px;
+  z-index: 99999;
+}
+.skip-link:focus {
+  top: 4px;
 }
