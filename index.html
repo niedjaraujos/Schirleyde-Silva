@@ -137,11 +137,11 @@
             <path d="m10 10 20 20" />
           </svg>
         </button>
-        <nav class="nav" aria-label="Navegação Principal" id="navbar">
+        <nav class="nav" id="navbar">
           <ul class="nav__list">
             <li><a href="#home" class="nav__link">Home</a></li>
             <li>
-              <a href="#especialiazacoes" class="nav__link">Especializações</a>
+              <a href="#servicos" class="nav__link">Serviços</a>
             </li>
             <li><a href="#sobre" class="nav__link">Sobre</a></li>
             <li>
@@ -168,7 +168,7 @@
           src="/assets/hero-bg.webp"
           alt=""
           class="hero__bg"
-          loading="eager"
+          aria-hidden="true"
         />
         <div class="container hero__container">
           <div class="hero__content">
@@ -194,9 +194,7 @@
                 >Agende uma consulta</a
               >
               <a
-                href="#services"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#servicos"
                 class="btn btn-secondary"
                 aria-label="Ir para seção de serviços"
                 >Conheça Especialidades</a
@@ -224,12 +222,118 @@
             <img
               src="/assets/reservaHero.webp"
               alt="Fonoaudióloga Schirleyde Silva em clinica terapeutica"
-              loading="lazy"
+              loading="eager"
+              fetchpriority="high"
             />
           </figure>
         </div>
       </section>
+
+      <section id="servicos" class="servicos">
+        <div class="container">
+          <div class="servicos__header">
+            <h2>Serviços <span class="italic">especializados</span></h2>
+            <p class="description">
+              Atendimento especializado com foco no desenvolvimento da
+              comunicação e qualidade de vida.
+            </p>
+          </div>
+          <div class="servicos__grid">
+            <article class="servicos__card card-1">
+              <img src="./assets/linguagem.png" alt="" aria-hidden="true" />
+              <h3 class="servicos__card-title">
+                Linguagem e Comunicação Infantil
+              </h3>
+              <p class="servicos__card-text">
+                Atendimento para crianças com atraso na fala e dificuldades de
+                comunicação, promovendo o desenvolvimento da linguagem oral e
+                compreensão.
+              </p>
+              <ul class="servicos__list">
+                <li>Estimular a fala</li>
+                <li>Desenvolver a comunicação funcional</li>
+                <li>Fortalecer a interação social</li>
+              </ul>
+            </article>
+            <article class="servicos__card reveal card-2">
+              <img src="./assets/autismo.png" alt="" aria-hidden="true" />
+              <h3 class="servicos__card-title">
+                Transtorno do Espectro Autista (TEA)
+              </h3>
+              <p class="servicos__card-text">
+                Intervenção focada no desenvolvimento da comunicação, interação
+                social e autonomia da criança, utilizando práticas baseadas em
+                evidências.
+              </p>
+              <ul class="servicos__list">
+                <li>ABA</li>
+                <li>Estratégias naturalísticas</li>
+                <li>Desenvolvimento social</li>
+              </ul>
+            </article>
+            <article class="servicos__card reveal card-3">
+              <img src="./assets/prompt.png" alt="" aria-hidden="true" />
+              <h3 class="servicos__card-title">Terapia PROMPT</h3>
+              <p class="servicos__card-text">
+                Abordagem tátil-cinestésica que auxilia na organização dos
+                movimentos da fala através de estímulos físicos no rosto.
+              </p>
+              <ul class="servicos__list">
+                <li>Organização motora da fala</li>
+                <li>Produção mais clara dos sons</li>
+                <li>Melhora da coordenação oral</li>
+              </ul>
+            </article>
+            <article class="servicos__card reveal card-4">
+              <img src="./assets/pecs.png" alt="" aria-hidden="true" />
+              <h3 class="servicos__card-title">
+                Comunicação Alternativa (PECS)
+              </h3>
+              <p class="servicos__card-text">
+                Sistema de comunicação por troca de figuras que ajuda crianças
+                não verbais ou com fala limitada a se comunicarem.
+              </p>
+              <ul class="servicos__list">
+                <li>Comunicação funcional</li>
+                <li>Iniciativa comunicativa</li>
+                <li>Redução de frustração</li>
+              </ul>
+            </article>
+            <article class="servicos__card reveal card-5">
+              <img src="./assets/evolutiva.png" alt="" aria-hidden="true" />
+              <h3 class="servicos__card-title">Terapia Neuroevolutiva</h3>
+              <p class="servicos__card-text">
+                Abordagem terapêutica voltada para o desenvolvimento motor de
+                crianças com disfunções neurológicas, focando no movimento
+                funcional.
+              </p>
+              <ul class="servicos__list">
+                <li>Aprendizagem Motora</li>
+                <li>Abordagem Multidisciplinar</li>
+                <li>Individualização</li>
+              </ul>
+            </article>
+            <article class="servicos__card reveal card-6">
+              <img src="./assets/parental.png" alt="" aria-hidden="true" />
+              <h3 class="servicos__card-title">Orientação Parental</h3>
+              <p class="servicos__card-text">
+                Suporte para pais e cuidadores com estratégias práticas para
+                estimular a comunicação no dia a dia.
+              </p>
+              <ul class="servicos__list">
+                <li>Rotinas estruturadas</li>
+                <li>Estratégias de comunicação</li>
+                <li>Manejo comportamental</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="sobre"></section>
+      <section class="depoimentos"></section>
+      <section class="contato"></section>
     </main>
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
