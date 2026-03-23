@@ -309,8 +309,8 @@ h1 {
   background-color: var(--color-cta-hover);
 }
 .btn-secondary {
-  color: var(--color-cta);
-  border: 2px solid var(--color-cta);
+  color: var(--color-cta-hover);
+  border: 2px solid var(--color-cta-hover);
 }
 .btn-secondary:hover {
   background: rgba(245, 212, 220, 0.5);
