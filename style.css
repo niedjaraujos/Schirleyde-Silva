@@ -440,13 +440,13 @@ h1 {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 .servicos__card-title {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-style: italic;
 }
 .servicos__card-text {
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .servicos__list {
   padding-left: 1rem;
@@ -454,9 +454,34 @@ h1 {
 }
 .servicos__list li {
   font-size: 0.9rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
   list-style: disc;
   opacity: 0.8;
+}
+
+/* CTA SUTIL */
+.servicos__cta {
+  background: rgba(255, 255, 255, 0.6);
+  margin-top: 4rem;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: var(--border-radius-xl);
+}
+
+.servicos__cta p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.servicos__cta strong {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.servicos__cta .btn {
+  margin-top: 1rem;
 }
 
 /* SOBRE */
@@ -584,6 +609,33 @@ h1 {
 }
 .processo__item:hover .processo__item-num {
   transform: scale(1.08);
+}
+/* CTA INTERMEDIÁRIO (sutil, dentro da seção processo) */
+.cta-inline {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid rgba(187, 93, 93, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(247, 218, 218, 0.35) 0%,
+    rgba(248, 245, 245, 0.6) 100%
+  );
+  text-align: center;
+}
+.cta-inline__text {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: var(--color-primary);
+  font-style: italic;
+}
+.cta-inline__btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
 }
 
 /* CTA */
@@ -734,5 +786,12 @@ h1 {
   }
   .sobre__content {
     padding: 0 6rem 0 3rem;
+  }
+  .cta-inline {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2.5rem 4rem;
+    text-align: left;
   }
 }
