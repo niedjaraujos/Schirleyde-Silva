@@ -22,7 +22,7 @@ menu.addEventListener("click", () => {
   const isExpanded = navList.classList.contains("active");
 
   // Atualiza aria-expanded dinamicamente
-  menu.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+  menu.setAttribute("aria-expanded", isExpanded);
 
   if (isExpanded) {
     navLinks[0].focus();
